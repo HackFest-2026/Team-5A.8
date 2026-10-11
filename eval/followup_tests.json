@@ -1,0 +1,112 @@
+[
+ {
+  "name": "Navigate then products keeps filters",
+  "turns": [
+   "Show Karnataka sales for September",
+   "Now show products"
+  ],
+  "page": "analytics",
+  "filters": {
+   "region": "Karnataka",
+   "group_by": "product",
+   "date_from": "2026-09-01",
+   "date_to": "2026-09-30"
+  }
+ },
+ {
+  "name": "Same for another region",
+  "turns": [
+   "Show Karnataka sales for September",
+   "same for Delhi"
+  ],
+  "page": "sales",
+  "filters": {
+   "region": "Delhi",
+   "date_from": "2026-09-01",
+   "date_to": "2026-09-30"
+  }
+ },
+ {
+  "name": "What about another month",
+  "turns": [
+   "Show Karnataka sales for September",
+   "what about August"
+  ],
+  "page": "sales",
+  "filters": {
+   "region": "Karnataka",
+   "date_from": "2026-08-01",
+   "date_to": "2026-08-31"
+  }
+ },
+ {
+  "name": "Only adds a filter",
+  "turns": [
+   "open inventory",
+   "only electrical"
+  ],
+  "page": "inventory",
+  "filters": {
+   "category": "Electrical"
+  }
+ },
+ {
+  "name": "Clear filters",
+  "turns": [
+   "show cancelled orders in Delhi",
+   "clear filters"
+  ],
+  "page": "sales",
+  "filters": {}
+ },
+ {
+  "name": "Go back",
+  "turns": [
+   "open suppliers",
+   "open finance",
+   "go back"
+  ],
+  "page": "suppliers",
+  "filters": {}
+ },
+ {
+  "name": "Why then same for region",
+  "turns": [
+   "why did revenue drop in Maharashtra",
+   "same for Gujarat"
+  ],
+  "intent": "why",
+  "filters": {
+   "region": "Gujarat"
+  }
+ },
+ {
+  "name": "Products then customers carries region",
+  "turns": [
+   "Show Delhi sales last quarter",
+   "now show customers"
+  ],
+  "page": "customers",
+  "filters": {
+   "region": "Delhi"
+  }
+ },
+ {
+  "name": "Multi-step in one message",
+  "turns": [
+   "show Karnataka sales last quarter, then top 5 products by revenue"
+  ],
+  "page": "analytics",
+  "filters": {
+   "group_by": "product"
+  }
+ },
+ {
+  "name": "Explain last answer",
+  "turns": [
+   "Compare revenue this month vs last month",
+   "how did you get that number?"
+  ],
+  "intent": "explain_last"
+ }
+]

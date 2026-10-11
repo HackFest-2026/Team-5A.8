@@ -1,0 +1,542 @@
+[
+ {
+  "utterance": "explian this page",
+  "intent": "current_page",
+  "page": null
+ },
+ {
+  "utterance": "whree am i",
+  "intent": "current_page",
+  "page": null
+ },
+ {
+  "utterance": "What is the cirrent page and key information?",
+  "intent": "current_page",
+  "page": null
+ },
+ {
+  "utterance": "symmarize this page",
+  "intent": "current_page",
+  "page": null
+ },
+ {
+  "utterance": "open dashborad",
+  "intent": "navigate",
+  "page": "dashboard"
+ },
+ {
+  "utterance": "show ovreview",
+  "intent": "navigate",
+  "page": "dashboard"
+ },
+ {
+  "utterance": "open invetory",
+  "intent": "navigate",
+  "page": "inventory"
+ },
+ {
+  "utterance": "show out of stock ites",
+  "intent": "navigate",
+  "page": "inventory"
+ },
+ {
+  "utterance": "show low stcok products",
+  "intent": "navigate",
+  "page": "inventory"
+ },
+ {
+  "utterance": "show electrical items in sock",
+  "intent": "navigate",
+  "page": "inventory"
+ },
+ {
+  "utterance": "show pacaging prodicts",
+  "intent": "navigate",
+  "page": "inventory"
+ },
+ {
+  "utterance": "inventory in mumbai warehoue",
+  "intent": "navigate",
+  "page": "inventory"
+ },
+ {
+  "utterance": "open supploers",
+  "intent": "navigate",
+  "page": "suppliers"
+ },
+ {
+  "utterance": "show vendosr",
+  "intent": "navigate",
+  "page": "suppliers"
+ },
+ {
+  "utterance": "show suppliers with rating abve 4.5",
+  "intent": "navigate",
+  "page": "suppliers"
+ },
+ {
+  "utterance": "list chemcial supplires",
+  "intent": "navigate",
+  "page": "suppliers"
+ },
+ {
+  "utterance": "open procurrment",
+  "intent": "navigate",
+  "page": "procurement"
+ },
+ {
+  "utterance": "show drpft purchase orders",
+  "intent": "navigate",
+  "page": "procurement"
+ },
+ {
+  "utterance": "show pending POs this monyh",
+  "intent": "navigate",
+  "page": "procurement"
+ },
+ {
+  "utterance": "pucrhase orders from Globaal Metals",
+  "intent": "navigate",
+  "page": "procurement"
+ },
+ {
+  "utterance": "show recived purchase orders last qusrter",
+  "intent": "navigate",
+  "page": "procurement"
+ },
+ {
+  "utterance": "open ssles",
+  "intent": "navigate",
+  "page": "sales"
+ },
+ {
+  "utterance": "Show Karnatakka salrs for last quarter",
+  "intent": "navigate",
+  "page": "sales"
+ },
+ {
+  "utterance": "Show cncelled orers",
+  "intent": "navigate",
+  "page": "sales"
+ },
+ {
+  "utterance": "show retuned orders in Delhi",
+  "intent": "navigate",
+  "page": "sales"
+ },
+ {
+  "utterance": "salees in mumbai last 3 months",
+  "intent": "navigate",
+  "page": "sales"
+ },
+ {
+  "utterance": "online portal otders this year",
+  "intent": "navigate",
+  "page": "sales"
+ },
+ {
+  "utterance": "show eectrical ssles in Q2 2026",
+  "intent": "navigate",
+  "page": "sales"
+ },
+ {
+  "utterance": "ordes from hyderabad in march 2026",
+  "intent": "navigate",
+  "page": "sales"
+ },
+ {
+  "utterance": "distributor salse in Tamil Nadu",
+  "intent": "navigate",
+  "page": "sales"
+ },
+ {
+  "utterance": "show delivred orders last week",
+  "intent": "navigate",
+  "page": "sales"
+ },
+ {
+  "utterance": "open custoemrs",
+  "intent": "navigate",
+  "page": "customers"
+ },
+ {
+  "utterance": "show enterprse customers in Delhi",
+  "intent": "navigate",
+  "page": "customers"
+ },
+ {
+  "utterance": "list czients in banglaore",
+  "intent": "navigate",
+  "page": "customers"
+ },
+ {
+  "utterance": "reetail cstomers",
+  "intent": "navigate",
+  "page": "customers"
+ },
+ {
+  "utterance": "open logistis",
+  "intent": "navigate",
+  "page": "logistics"
+ },
+ {
+  "utterance": "show shipmeents in transit",
+  "intent": "navigate",
+  "page": "logistics"
+ },
+ {
+  "utterance": "BlueDaart shipments last 30 days",
+  "intent": "navigate",
+  "page": "logistics"
+ },
+ {
+  "utterance": "Show Maharashtra shipmeents last 30 days",
+  "intent": "navigate",
+  "page": "logistics"
+ },
+ {
+  "utterance": "open finnance",
+  "intent": "navigate",
+  "page": "finance"
+ },
+ {
+  "utterance": "go to fibance last quarter",
+  "intent": "navigate",
+  "page": "finance"
+ },
+ {
+  "utterance": "show marketing expneses this year",
+  "intent": "finance",
+  "page": "finance"
+ },
+ {
+  "utterance": "open analyytics",
+  "intent": "navigate",
+  "page": "analytics"
+ },
+ {
+  "utterance": "revenue breakdown by channeel",
+  "intent": "navigate",
+  "page": "analytics"
+ },
+ {
+  "utterance": "units by caetgory last 6 monhts",
+  "intent": "navigate",
+  "page": "analytics"
+ },
+ {
+  "utterance": "open appprovals",
+  "intent": "navigate",
+  "page": "approvals"
+ },
+ {
+  "utterance": "show rejected cjange requests",
+  "intent": "navigate",
+  "page": "approvals"
+ },
+ {
+  "utterance": "open auit log",
+  "intent": "navigate",
+  "page": "activity"
+ },
+ {
+  "utterance": "show agennt avtivity",
+  "intent": "navigate",
+  "page": "activity"
+ },
+ {
+  "utterance": "show peding rquests",
+  "intent": "requests",
+  "page": "approvals"
+ },
+ {
+  "utterance": "show my requedts",
+  "intent": "requests",
+  "page": "approvals"
+ },
+ {
+  "utterance": "what needs my approval",
+  "intent": "requests",
+  "page": "approvals"
+ },
+ {
+  "utterance": "summarize pending requess",
+  "intent": "requests",
+  "page": "approvals"
+ },
+ {
+  "utterance": "appprove reqquest 1",
+  "intent": "review",
+  "page": null
+ },
+ {
+  "utterance": "reject request 2 because price not justtified",
+  "intent": "review",
+  "page": "approvals"
+ },
+ {
+  "utterance": "appprove all",
+  "intent": "review_all",
+  "page": null
+ },
+ {
+  "utterance": "Show me prodcts liekly to run out in 14 days",
+  "intent": "stockout",
+  "page": "inventory"
+ },
+ {
+  "utterance": "wich items will run out in next 7 days",
+  "intent": "stockout",
+  "page": "inventory"
+ },
+ {
+  "utterance": "Analyez invwntory items that may run out in next 14 days and create purchase order drafts with best supplier options",
+  "intent": "stockout",
+  "page": "inventory"
+ },
+ {
+  "utterance": "Create purhcase order for low stock items",
+  "intent": "stockout",
+  "page": "inventory"
+ },
+ {
+  "utterance": "stock out risk for electrical itmes",
+  "intent": "stockout",
+  "page": "inventory"
+ },
+ {
+  "utterance": "create purchase order for 500 stel rod",
+  "intent": "create_po",
+  "page": "procurement"
+ },
+ {
+  "utterance": "raie a PO for coppper wire",
+  "intent": "create_po",
+  "page": "procurement"
+ },
+ {
+  "utterance": "create pirchase order for platsic resin from Prime Plastics",
+  "intent": "create_po",
+  "page": "procurement"
+ },
+ {
+  "utterance": "Compare top 3 suppliers for steel with best picing",
+  "intent": "compare_suppliers",
+  "page": "suppliers"
+ },
+ {
+  "utterance": "best supplieer for coppper wire",
+  "intent": "compare_suppliers",
+  "page": "suppliers"
+ },
+ {
+  "utterance": "which vendor is cheapest for eopxy resin",
+  "intent": "compare_suppliers",
+  "page": "suppliers"
+ },
+ {
+  "utterance": "compsre suppliers for safety glves",
+  "intent": "compare_suppliers",
+  "page": "suppliers"
+ },
+ {
+  "utterance": "Compare revneue this month vs last montth",
+  "intent": "compare_periods",
+  "page": "analytics"
+ },
+ {
+  "utterance": "compare ordees Q2 2026 vs Q1 2026",
+  "intent": "compare_periods",
+  "page": "analytics"
+ },
+ {
+  "utterance": "revenuue 2026 vs 2025",
+  "intent": "compare_periods",
+  "page": "analytics"
+ },
+ {
+  "utterance": "copmare Karnataka revenue last quarter vs previous",
+  "intent": "compare_periods",
+  "page": "analytics"
+ },
+ {
+  "utterance": "month over month revneue growth",
+  "intent": "compare_periods",
+  "page": "analytics"
+ },
+ {
+  "utterance": "Why did rebenue drop in Maharashtra?",
+  "intent": "why",
+  "page": "logistics"
+ },
+ {
+  "utterance": "why are salrs down",
+  "intent": "why",
+  "page": "analytics"
+ },
+ {
+  "utterance": "what caused the decline in oders last month",
+  "intent": "why",
+  "page": "analytics"
+ },
+ {
+  "utterance": "why did logsitics cost increase?",
+  "intent": "expense_why",
+  "page": "finance"
+ },
+ {
+  "utterance": "Top 5 products by rvenue",
+  "intent": "top",
+  "page": "analytics"
+ },
+ {
+  "utterance": "top 10 customers by rwvenue",
+  "intent": "top",
+  "page": "customers"
+ },
+ {
+  "utterance": "bottom 3 rgions by unts",
+  "intent": "top",
+  "page": "analytics"
+ },
+ {
+  "utterance": "best selilng products this year",
+  "intent": "top",
+  "page": "analytics"
+ },
+ {
+  "utterance": "top supppliers by rating",
+  "intent": "top",
+  "page": "suppliers"
+ },
+ {
+  "utterance": "top 3 categories last quarer",
+  "intent": "top",
+  "page": "analytics"
+ },
+ {
+  "utterance": "Show last 12 mnoths anaylsis",
+  "intent": "trend",
+  "page": "analytics"
+ },
+ {
+  "utterance": "revenue teend 2026",
+  "intent": "trend",
+  "page": "analytics"
+ },
+ {
+  "utterance": "analyze sales in Karnatka last 6 monthhs",
+  "intent": "trend",
+  "page": "analytics"
+ },
+ {
+  "utterance": "forecast reenue",
+  "intent": "trend",
+  "page": "analytics"
+ },
+ {
+  "utterance": "how are saales diong",
+  "intent": "trend",
+  "page": "analytics"
+ },
+ {
+  "utterance": "show drlayed shipmnts",
+  "intent": "delays",
+  "page": "logistics"
+ },
+ {
+  "utterance": "wich careier has the most delays?",
+  "intent": "delays",
+  "page": "logistics"
+ },
+ {
+  "utterance": "late delievries to Maharashtrra",
+  "intent": "delays",
+  "page": "logistics"
+ },
+ {
+  "utterance": "what is our net proit this year?",
+  "intent": "finance",
+  "page": "finance"
+ },
+ {
+  "utterance": "gross margni last quarter",
+  "intent": "finance",
+  "page": "finance"
+ },
+ {
+  "utterance": "exxpense braekdown",
+  "intent": "finance",
+  "page": "finance"
+ },
+ {
+  "utterance": "chaneg price of copper wire to 430",
+  "intent": "update",
+  "page": "inventory"
+ },
+ {
+  "utterance": "set PO-00012 staus to aproved",
+  "intent": "update",
+  "page": "procurement"
+ },
+ {
+  "utterance": "update reorder leel of Stel Rod to 400",
+  "intent": "update",
+  "page": "inventory"
+ },
+ {
+  "utterance": "increase price of braas rod by 5%",
+  "intent": "update",
+  "page": "inventory"
+ },
+ {
+  "utterance": "change rating of supplier Unichem Trdaers to 3.5",
+  "intent": "update",
+  "page": "suppliers"
+ },
+ {
+  "utterance": "mark SO-00100 as dellivered",
+  "intent": "update",
+  "page": "sales"
+ },
+ {
+  "utterance": "delete supplier Unichem Tradres",
+  "intent": "delete",
+  "page": "suppliers"
+ },
+ {
+  "utterance": "removve PO-00005",
+  "intent": "delete",
+  "page": "procurement"
+ },
+ {
+  "utterance": "add supplier Acme Setels in Pune",
+  "intent": "create",
+  "page": "suppliers"
+ },
+ {
+  "utterance": "create new product Brass Nut category components prive 25",
+  "intent": "create",
+  "page": "inventory"
+ },
+ {
+  "utterance": "add customer Zeith Labs in Chennai",
+  "intent": "create",
+  "page": "customers"
+ },
+ {
+  "utterance": "add expense marketing amoumt 50000",
+  "intent": "create",
+  "page": "finance"
+ },
+ {
+  "utterance": "find copepr",
+  "intent": "search",
+  "page": "inventory"
+ },
+ {
+  "utterance": "seaarch Global Metals",
+  "intent": "search",
+  "page": "suppliers"
+ }
+]

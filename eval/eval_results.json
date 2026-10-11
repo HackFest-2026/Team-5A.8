@@ -1,0 +1,1982 @@
+{
+ "report": {
+  "role": "admin",
+  "utterances": 115,
+  "intent_accuracy": "100.0%",
+  "intent_to_destination_accuracy": "100.0%",
+  "ui_state_correctness": "100.0%",
+  "task_success (intent+page+filters)": "100.0%",
+  "latency_ms_p50": 7.0,
+  "latency_ms_p95": 23.9,
+  "latency_ms_max": 49.1,
+  "page_retrieval_MRR": 1.0,
+  "api_retrieval_MRR": 1.0,
+  "unrequested_writes (action hallucination)": 0
+ },
+ "results": [
+  {
+   "utterance": "hi",
+   "intent": "help",
+   "page": null,
+   "filters": {},
+   "has_date": false,
+   "got_intent": "help",
+   "got_page": null,
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 17.2
+  },
+  {
+   "utterance": "help",
+   "intent": "help",
+   "page": null,
+   "filters": {},
+   "has_date": false,
+   "got_intent": "help",
+   "got_page": null,
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 1.7
+  },
+  {
+   "utterance": "what can you do?",
+   "intent": "help",
+   "page": null,
+   "filters": {},
+   "has_date": false,
+   "got_intent": "help",
+   "got_page": null,
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 1.9
+  },
+  {
+   "utterance": "what is on this page?",
+   "intent": "current_page",
+   "page": null,
+   "filters": {},
+   "has_date": false,
+   "got_intent": "current_page",
+   "got_page": null,
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 46.8
+  },
+  {
+   "utterance": "explain this page",
+   "intent": "current_page",
+   "page": null,
+   "filters": {},
+   "has_date": false,
+   "got_intent": "current_page",
+   "got_page": null,
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.2
+  },
+  {
+   "utterance": "where am i",
+   "intent": "current_page",
+   "page": null,
+   "filters": {},
+   "has_date": false,
+   "got_intent": "current_page",
+   "got_page": null,
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.2
+  },
+  {
+   "utterance": "What is the current page and key information?",
+   "intent": "current_page",
+   "page": null,
+   "filters": {},
+   "has_date": false,
+   "got_intent": "current_page",
+   "got_page": null,
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 6.9
+  },
+  {
+   "utterance": "summarize this page",
+   "intent": "current_page",
+   "page": null,
+   "filters": {},
+   "has_date": false,
+   "got_intent": "current_page",
+   "got_page": null,
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 6.8
+  },
+  {
+   "utterance": "open dashboard",
+   "intent": "navigate",
+   "page": "dashboard",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "dashboard",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 8.8
+  },
+  {
+   "utterance": "go to home",
+   "intent": "navigate",
+   "page": "dashboard",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "dashboard",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.3
+  },
+  {
+   "utterance": "show overview",
+   "intent": "navigate",
+   "page": "dashboard",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "dashboard",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.2
+  },
+  {
+   "utterance": "open inventory",
+   "intent": "navigate",
+   "page": "inventory",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "inventory",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 9.6
+  },
+  {
+   "utterance": "show out of stock items",
+   "intent": "navigate",
+   "page": "inventory",
+   "filters": {
+    "stock_status": "Out of Stock"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "inventory",
+   "got_filters": {
+    "stock_status": "Out of Stock"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.0
+  },
+  {
+   "utterance": "show low stock products",
+   "intent": "navigate",
+   "page": "inventory",
+   "filters": {
+    "stock_status": "Low Stock"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "inventory",
+   "got_filters": {
+    "stock_status": "Low Stock"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 6.9
+  },
+  {
+   "utterance": "show electrical items in stock",
+   "intent": "navigate",
+   "page": "inventory",
+   "filters": {
+    "category": "Electrical",
+    "stock_status": "In Stock"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "inventory",
+   "got_filters": {
+    "category": "Electrical",
+    "stock_status": "In Stock"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 8.8
+  },
+  {
+   "utterance": "show packaging products",
+   "intent": "navigate",
+   "page": "inventory",
+   "filters": {
+    "category": "Packaging"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "inventory",
+   "got_filters": {
+    "category": "Packaging"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 8.9
+  },
+  {
+   "utterance": "inventory in mumbai warehouse",
+   "intent": "navigate",
+   "page": "inventory",
+   "filters": {
+    "warehouse": "Mumbai WH"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "inventory",
+   "got_filters": {
+    "warehouse": "Mumbai WH"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 12.6
+  },
+  {
+   "utterance": "open suppliers",
+   "intent": "navigate",
+   "page": "suppliers",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "suppliers",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 5.6
+  },
+  {
+   "utterance": "show vendors",
+   "intent": "navigate",
+   "page": "suppliers",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "suppliers",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 3.2
+  },
+  {
+   "utterance": "show suppliers with rating above 4.5",
+   "intent": "navigate",
+   "page": "suppliers",
+   "filters": {
+    "min_rating": "4.5"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "suppliers",
+   "got_filters": {
+    "min_rating": "4.5"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 4.7
+  },
+  {
+   "utterance": "list chemical suppliers",
+   "intent": "navigate",
+   "page": "suppliers",
+   "filters": {
+    "category": "Chemicals"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "suppliers",
+   "got_filters": {
+    "category": "Chemicals"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 5.4
+  },
+  {
+   "utterance": "open procurement",
+   "intent": "navigate",
+   "page": "procurement",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "procurement",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.0
+  },
+  {
+   "utterance": "show draft purchase orders",
+   "intent": "navigate",
+   "page": "procurement",
+   "filters": {
+    "status": "Draft"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "procurement",
+   "got_filters": {
+    "status": "Draft"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 5.9
+  },
+  {
+   "utterance": "show pending POs this month",
+   "intent": "navigate",
+   "page": "procurement",
+   "filters": {
+    "status": "Pending"
+   },
+   "has_date": true,
+   "got_intent": "navigate",
+   "got_page": "procurement",
+   "got_filters": {
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-11",
+    "status": "Pending"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 5.7
+  },
+  {
+   "utterance": "purchase orders from Global Metals",
+   "intent": "navigate",
+   "page": "procurement",
+   "filters": {
+    "supplier": "Global Metals Ltd."
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "procurement",
+   "got_filters": {
+    "supplier": "Global Metals Ltd."
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.0
+  },
+  {
+   "utterance": "show received purchase orders last quarter",
+   "intent": "navigate",
+   "page": "procurement",
+   "filters": {
+    "status": "Received"
+   },
+   "has_date": true,
+   "got_intent": "navigate",
+   "got_page": "procurement",
+   "got_filters": {
+    "date_from": "2026-07-01",
+    "date_to": "2026-09-30",
+    "status": "Received"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.8
+  },
+  {
+   "utterance": "open sales",
+   "intent": "navigate",
+   "page": "sales",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "sales",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 49.1
+  },
+  {
+   "utterance": "Show Karnataka sales for last quarter",
+   "intent": "navigate",
+   "page": "sales",
+   "filters": {
+    "region": "Karnataka"
+   },
+   "has_date": true,
+   "got_intent": "navigate",
+   "got_page": "sales",
+   "got_filters": {
+    "date_from": "2026-07-01",
+    "date_to": "2026-09-30",
+    "region": "Karnataka"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 16.5
+  },
+  {
+   "utterance": "Show cancelled orders",
+   "intent": "navigate",
+   "page": "sales",
+   "filters": {
+    "status": "Cancelled"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "sales",
+   "got_filters": {
+    "status": "Cancelled"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 14.6
+  },
+  {
+   "utterance": "show returned orders in Delhi",
+   "intent": "navigate",
+   "page": "sales",
+   "filters": {
+    "status": "Returned",
+    "region": "Delhi"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "sales",
+   "got_filters": {
+    "region": "Delhi",
+    "status": "Returned"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 15.0
+  },
+  {
+   "utterance": "sales in mumbai last 3 months",
+   "intent": "navigate",
+   "page": "sales",
+   "filters": {
+    "region": "Maharashtra"
+   },
+   "has_date": true,
+   "got_intent": "navigate",
+   "got_page": "sales",
+   "got_filters": {
+    "date_from": "2026-07-13",
+    "date_to": "2026-10-11",
+    "region": "Maharashtra"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 14.8
+  },
+  {
+   "utterance": "online portal orders this year",
+   "intent": "navigate",
+   "page": "sales",
+   "filters": {
+    "channel": "Online Portal"
+   },
+   "has_date": true,
+   "got_intent": "navigate",
+   "got_page": "sales",
+   "got_filters": {
+    "date_from": "2026-01-01",
+    "date_to": "2026-10-11",
+    "channel": "Online Portal"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 25.4
+  },
+  {
+   "utterance": "show electrical sales in Q2 2026",
+   "intent": "navigate",
+   "page": "sales",
+   "filters": {
+    "category": "Electrical"
+   },
+   "has_date": true,
+   "got_intent": "navigate",
+   "got_page": "sales",
+   "got_filters": {
+    "date_from": "2026-04-01",
+    "date_to": "2026-06-30",
+    "category": "Electrical"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 14.1
+  },
+  {
+   "utterance": "orders from hyderabad in march 2026",
+   "intent": "navigate",
+   "page": "sales",
+   "filters": {
+    "region": "Telangana"
+   },
+   "has_date": true,
+   "got_intent": "navigate",
+   "got_page": "sales",
+   "got_filters": {
+    "date_from": "2026-03-01",
+    "date_to": "2026-03-31",
+    "region": "Telangana"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 11.2
+  },
+  {
+   "utterance": "distributor sales in Tamil Nadu",
+   "intent": "navigate",
+   "page": "sales",
+   "filters": {
+    "channel": "Distributor",
+    "region": "Tamil Nadu"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "sales",
+   "got_filters": {
+    "region": "Tamil Nadu",
+    "channel": "Distributor"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 19.5
+  },
+  {
+   "utterance": "show delivered orders last week",
+   "intent": "navigate",
+   "page": "sales",
+   "filters": {
+    "status": "Delivered"
+   },
+   "has_date": true,
+   "got_intent": "navigate",
+   "got_page": "sales",
+   "got_filters": {
+    "date_from": "2026-09-28",
+    "date_to": "2026-10-04",
+    "status": "Delivered"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 12.5
+  },
+  {
+   "utterance": "open customers",
+   "intent": "navigate",
+   "page": "customers",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "customers",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 18.4
+  },
+  {
+   "utterance": "show enterprise customers in Delhi",
+   "intent": "navigate",
+   "page": "customers",
+   "filters": {
+    "segment": "Enterprise",
+    "region": "Delhi"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "customers",
+   "got_filters": {
+    "region": "Delhi",
+    "segment": "Enterprise",
+    "q": "Vertex Enterprises"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 23.9
+  },
+  {
+   "utterance": "list clients in bangalore",
+   "intent": "navigate",
+   "page": "customers",
+   "filters": {
+    "region": "Karnataka"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "customers",
+   "got_filters": {
+    "region": "Karnataka"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 23.2
+  },
+  {
+   "utterance": "retail customers",
+   "intent": "navigate",
+   "page": "customers",
+   "filters": {
+    "segment": "Retail"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "customers",
+   "got_filters": {
+    "segment": "Retail"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 19.3
+  },
+  {
+   "utterance": "open logistics",
+   "intent": "navigate",
+   "page": "logistics",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "logistics",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 17.5
+  },
+  {
+   "utterance": "show shipments in transit",
+   "intent": "navigate",
+   "page": "logistics",
+   "filters": {
+    "status": "In Transit"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "logistics",
+   "got_filters": {
+    "status": "In Transit"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 4.8
+  },
+  {
+   "utterance": "BlueDart shipments last 30 days",
+   "intent": "navigate",
+   "page": "logistics",
+   "filters": {
+    "carrier": "BlueDart"
+   },
+   "has_date": true,
+   "got_intent": "navigate",
+   "got_page": "logistics",
+   "got_filters": {
+    "date_from": "2026-09-12",
+    "date_to": "2026-10-11",
+    "carrier": "BlueDart"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 5.5
+  },
+  {
+   "utterance": "Show Maharashtra shipments last 30 days",
+   "intent": "navigate",
+   "page": "logistics",
+   "filters": {
+    "region": "Maharashtra"
+   },
+   "has_date": true,
+   "got_intent": "navigate",
+   "got_page": "logistics",
+   "got_filters": {
+    "date_from": "2026-09-12",
+    "date_to": "2026-10-11",
+    "region": "Maharashtra"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 5.5
+  },
+  {
+   "utterance": "open finance",
+   "intent": "navigate",
+   "page": "finance",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "finance",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 15.1
+  },
+  {
+   "utterance": "go to finance last quarter",
+   "intent": "navigate",
+   "page": "finance",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "navigate",
+   "got_page": "finance",
+   "got_filters": {
+    "date_from": "2026-07-01",
+    "date_to": "2026-09-30"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 8.0
+  },
+  {
+   "utterance": "show marketing expenses this year",
+   "intent": "finance",
+   "page": "finance",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "finance",
+   "got_page": "finance",
+   "got_filters": {
+    "date_from": "2026-01-01",
+    "date_to": "2026-10-11"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 13.6
+  },
+  {
+   "utterance": "open analytics",
+   "intent": "navigate",
+   "page": "analytics",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "analytics",
+   "got_filters": {
+    "metric": "revenue"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 15.9
+  },
+  {
+   "utterance": "revenue breakdown by channel",
+   "intent": "navigate",
+   "page": "analytics",
+   "filters": {
+    "group_by": "channel"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "analytics",
+   "got_filters": {
+    "metric": "revenue",
+    "group_by": "channel"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 15.1
+  },
+  {
+   "utterance": "units by category last 6 months",
+   "intent": "navigate",
+   "page": "analytics",
+   "filters": {
+    "group_by": "category",
+    "metric": "units"
+   },
+   "has_date": true,
+   "got_intent": "navigate",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2026-04-13",
+    "date_to": "2026-10-11",
+    "metric": "units",
+    "group_by": "category"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 10.9
+  },
+  {
+   "utterance": "open approvals",
+   "intent": "navigate",
+   "page": "approvals",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "approvals",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.7
+  },
+  {
+   "utterance": "show rejected change requests",
+   "intent": "navigate",
+   "page": "approvals",
+   "filters": {
+    "status": "Rejected"
+   },
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "approvals",
+   "got_filters": {
+    "status": "Rejected"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.4
+  },
+  {
+   "utterance": "open audit log",
+   "intent": "navigate",
+   "page": "activity",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "activity",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.7
+  },
+  {
+   "utterance": "show agent activity",
+   "intent": "navigate",
+   "page": "activity",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "navigate",
+   "got_page": "activity",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 3.0
+  },
+  {
+   "utterance": "go back",
+   "intent": "go_back",
+   "page": null,
+   "filters": {},
+   "has_date": false,
+   "got_intent": "go_back",
+   "got_page": "inventory",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 1.7
+  },
+  {
+   "utterance": "show pending requests",
+   "intent": "requests",
+   "page": "approvals",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "requests",
+   "got_page": "approvals",
+   "got_filters": {
+    "status": "Pending"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.3
+  },
+  {
+   "utterance": "show my requests",
+   "intent": "requests",
+   "page": "approvals",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "requests",
+   "got_page": "approvals",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.1
+  },
+  {
+   "utterance": "what needs my approval",
+   "intent": "requests",
+   "page": "approvals",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "requests",
+   "got_page": "approvals",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.1
+  },
+  {
+   "utterance": "summarize pending requests",
+   "intent": "requests",
+   "page": "approvals",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "requests",
+   "got_page": "approvals",
+   "got_filters": {
+    "status": "Pending"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.2
+  },
+  {
+   "utterance": "approve request 1",
+   "intent": "review",
+   "page": null,
+   "filters": {},
+   "has_date": false,
+   "got_intent": "review",
+   "got_page": "inventory",
+   "got_filters": {
+    "q": "Plastic Resin"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 16.2
+  },
+  {
+   "utterance": "reject request 2 because price not justified",
+   "intent": "review",
+   "page": "approvals",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "review",
+   "got_page": "approvals",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 26.1
+  },
+  {
+   "utterance": "approve all",
+   "intent": "review_all",
+   "page": null,
+   "filters": {},
+   "has_date": false,
+   "got_intent": "review_all",
+   "got_page": "approvals",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 35.5
+  },
+  {
+   "utterance": "Show me products likely to run out in 14 days",
+   "intent": "stockout",
+   "page": "inventory",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "stockout",
+   "got_page": "inventory",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 15.4
+  },
+  {
+   "utterance": "which items will run out in next 7 days",
+   "intent": "stockout",
+   "page": "inventory",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "stockout",
+   "got_page": "inventory",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 6.5
+  },
+  {
+   "utterance": "Analyze inventory items that may run out in next 14 days and create purchase order drafts with best supplier options",
+   "intent": "stockout",
+   "page": "inventory",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "stockout",
+   "got_page": "inventory",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 9.3
+  },
+  {
+   "utterance": "Create purchase order for low stock items",
+   "intent": "stockout",
+   "page": "inventory",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "stockout",
+   "got_page": "inventory",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 9.0
+  },
+  {
+   "utterance": "stock out risk for electrical items",
+   "intent": "stockout",
+   "page": "inventory",
+   "filters": {
+    "category": "Electrical"
+   },
+   "has_date": false,
+   "got_intent": "stockout",
+   "got_page": "inventory",
+   "got_filters": {
+    "category": "Electrical"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 6.8
+  },
+  {
+   "utterance": "create purchase order for 500 steel rod",
+   "intent": "create_po",
+   "page": "procurement",
+   "filters": {
+    "status": "Draft"
+   },
+   "has_date": false,
+   "got_intent": "create_po",
+   "got_page": "procurement",
+   "got_filters": {
+    "status": "Draft"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 11.6
+  },
+  {
+   "utterance": "raise a PO for copper wire",
+   "intent": "create_po",
+   "page": "procurement",
+   "filters": {
+    "status": "Draft"
+   },
+   "has_date": false,
+   "got_intent": "create_po",
+   "got_page": "procurement",
+   "got_filters": {
+    "status": "Draft"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 10.5
+  },
+  {
+   "utterance": "create purchase order for plastic resin from Prime Plastics",
+   "intent": "create_po",
+   "page": "procurement",
+   "filters": {
+    "status": "Draft"
+   },
+   "has_date": false,
+   "got_intent": "create_po",
+   "got_page": "procurement",
+   "got_filters": {
+    "status": "Draft"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 13.4
+  },
+  {
+   "utterance": "Compare top 3 suppliers for steel with best pricing",
+   "intent": "compare_suppliers",
+   "page": "suppliers",
+   "filters": {
+    "category": "Raw Materials"
+   },
+   "has_date": false,
+   "got_intent": "compare_suppliers",
+   "got_page": "suppliers",
+   "got_filters": {
+    "category": "Raw Materials"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 4.8
+  },
+  {
+   "utterance": "best supplier for copper wire",
+   "intent": "compare_suppliers",
+   "page": "suppliers",
+   "filters": {
+    "category": "Electrical"
+   },
+   "has_date": false,
+   "got_intent": "compare_suppliers",
+   "got_page": "suppliers",
+   "got_filters": {
+    "category": "Electrical"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 4.4
+  },
+  {
+   "utterance": "which vendor is cheapest for epoxy resin",
+   "intent": "compare_suppliers",
+   "page": "suppliers",
+   "filters": {
+    "category": "Chemicals"
+   },
+   "has_date": false,
+   "got_intent": "compare_suppliers",
+   "got_page": "suppliers",
+   "got_filters": {
+    "category": "Chemicals"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 5.2
+  },
+  {
+   "utterance": "compare suppliers for safety gloves",
+   "intent": "compare_suppliers",
+   "page": "suppliers",
+   "filters": {
+    "category": "Safety"
+   },
+   "has_date": false,
+   "got_intent": "compare_suppliers",
+   "got_page": "suppliers",
+   "got_filters": {
+    "category": "Safety"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 4.7
+  },
+  {
+   "utterance": "Compare revenue this month vs last month",
+   "intent": "compare_periods",
+   "page": "analytics",
+   "filters": {
+    "metric": "revenue",
+    "group_by": "region"
+   },
+   "has_date": true,
+   "got_intent": "compare_periods",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-11",
+    "metric": "revenue",
+    "group_by": "region"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 11.7
+  },
+  {
+   "utterance": "compare orders Q2 2026 vs Q1 2026",
+   "intent": "compare_periods",
+   "page": "analytics",
+   "filters": {
+    "metric": "orders"
+   },
+   "has_date": true,
+   "got_intent": "compare_periods",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2026-04-01",
+    "date_to": "2026-06-30",
+    "metric": "orders",
+    "group_by": "region"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.2
+  },
+  {
+   "utterance": "revenue 2026 vs 2025",
+   "intent": "compare_periods",
+   "page": "analytics",
+   "filters": {
+    "metric": "revenue"
+   },
+   "has_date": true,
+   "got_intent": "compare_periods",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2026-01-01",
+    "date_to": "2026-10-11",
+    "metric": "revenue",
+    "group_by": "region"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 19.1
+  },
+  {
+   "utterance": "compare Karnataka revenue last quarter vs previous",
+   "intent": "compare_periods",
+   "page": "analytics",
+   "filters": {
+    "region": "Karnataka"
+   },
+   "has_date": true,
+   "got_intent": "compare_periods",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2026-07-01",
+    "date_to": "2026-09-30",
+    "metric": "revenue",
+    "group_by": "region",
+    "region": "Karnataka"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 8.0
+  },
+  {
+   "utterance": "month over month revenue growth",
+   "intent": "compare_periods",
+   "page": "analytics",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "compare_periods",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-11",
+    "metric": "revenue",
+    "group_by": "region"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.9
+  },
+  {
+   "utterance": "Why did revenue drop in Maharashtra?",
+   "intent": "why",
+   "page": "logistics",
+   "filters": {
+    "region": "Maharashtra"
+   },
+   "has_date": true,
+   "got_intent": "why",
+   "got_page": "logistics",
+   "got_filters": {
+    "region": "Maharashtra",
+    "date_from": "2026-08-13",
+    "date_to": "2026-10-11"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 15.4
+  },
+  {
+   "utterance": "why are sales down",
+   "intent": "why",
+   "page": "analytics",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "why",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2026-08-13",
+    "date_to": "2026-10-11",
+    "metric": "revenue",
+    "group_by": "region"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 19.1
+  },
+  {
+   "utterance": "what caused the decline in orders last month",
+   "intent": "why",
+   "page": "analytics",
+   "filters": {
+    "metric": "orders"
+   },
+   "has_date": true,
+   "got_intent": "why",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2026-09-01",
+    "date_to": "2026-09-30",
+    "metric": "orders",
+    "group_by": "region"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 14.5
+  },
+  {
+   "utterance": "why did logistics cost increase?",
+   "intent": "expense_why",
+   "page": "finance",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "expense_why",
+   "got_page": "finance",
+   "got_filters": {
+    "date_from": "2026-07-14",
+    "date_to": "2026-10-11"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 24.6
+  },
+  {
+   "utterance": "Top 5 products by revenue",
+   "intent": "top",
+   "page": "analytics",
+   "filters": {
+    "group_by": "product"
+   },
+   "has_date": false,
+   "got_intent": "top",
+   "got_page": "analytics",
+   "got_filters": {
+    "metric": "revenue",
+    "group_by": "product"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.8
+  },
+  {
+   "utterance": "top 10 customers by revenue",
+   "intent": "top",
+   "page": "customers",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "top",
+   "got_page": "customers",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 10.1
+  },
+  {
+   "utterance": "bottom 3 regions by units",
+   "intent": "top",
+   "page": "analytics",
+   "filters": {
+    "group_by": "region",
+    "metric": "units"
+   },
+   "has_date": false,
+   "got_intent": "top",
+   "got_page": "analytics",
+   "got_filters": {
+    "metric": "units",
+    "group_by": "region"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 6.3
+  },
+  {
+   "utterance": "best selling products this year",
+   "intent": "top",
+   "page": "analytics",
+   "filters": {
+    "group_by": "product"
+   },
+   "has_date": true,
+   "got_intent": "top",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2026-01-01",
+    "date_to": "2026-10-11",
+    "metric": "revenue",
+    "group_by": "product"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 5.8
+  },
+  {
+   "utterance": "top suppliers by rating",
+   "intent": "top",
+   "page": "suppliers",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "top",
+   "got_page": "suppliers",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 3.4
+  },
+  {
+   "utterance": "top 3 categories last quarter",
+   "intent": "top",
+   "page": "analytics",
+   "filters": {
+    "group_by": "category"
+   },
+   "has_date": true,
+   "got_intent": "top",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2026-07-01",
+    "date_to": "2026-09-30",
+    "metric": "revenue",
+    "group_by": "category"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 5.8
+  },
+  {
+   "utterance": "Show last 12 months analysis",
+   "intent": "trend",
+   "page": "analytics",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "trend",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2025-10-12",
+    "date_to": "2026-10-11",
+    "metric": "revenue",
+    "group_by": "region"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.0
+  },
+  {
+   "utterance": "revenue trend 2026",
+   "intent": "trend",
+   "page": "analytics",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "trend",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2026-01-01",
+    "date_to": "2026-10-11",
+    "metric": "revenue",
+    "group_by": "region"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 5.9
+  },
+  {
+   "utterance": "analyze sales in Karnataka last 6 months",
+   "intent": "trend",
+   "page": "analytics",
+   "filters": {
+    "region": "Karnataka"
+   },
+   "has_date": true,
+   "got_intent": "trend",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2026-04-13",
+    "date_to": "2026-10-11",
+    "metric": "revenue",
+    "group_by": "region",
+    "region": "Karnataka"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 4.8
+  },
+  {
+   "utterance": "forecast revenue",
+   "intent": "trend",
+   "page": "analytics",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "trend",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2025-11-01",
+    "date_to": "2026-10-11",
+    "metric": "revenue",
+    "group_by": "region"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 6.6
+  },
+  {
+   "utterance": "how are sales doing",
+   "intent": "trend",
+   "page": "analytics",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "trend",
+   "got_page": "analytics",
+   "got_filters": {
+    "date_from": "2025-11-01",
+    "date_to": "2026-10-11",
+    "metric": "revenue",
+    "group_by": "region"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 8.4
+  },
+  {
+   "utterance": "show delayed shipments",
+   "intent": "delays",
+   "page": "logistics",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "delays",
+   "got_page": "logistics",
+   "got_filters": {
+    "date_from": "2026-08-13",
+    "date_to": "2026-10-11"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 13.9
+  },
+  {
+   "utterance": "which carrier has the most delays?",
+   "intent": "delays",
+   "page": "logistics",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "delays",
+   "got_page": "logistics",
+   "got_filters": {
+    "date_from": "2026-08-13",
+    "date_to": "2026-10-11"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.3
+  },
+  {
+   "utterance": "late deliveries to Maharashtra",
+   "intent": "delays",
+   "page": "logistics",
+   "filters": {
+    "region": "Maharashtra"
+   },
+   "has_date": true,
+   "got_intent": "delays",
+   "got_page": "logistics",
+   "got_filters": {
+    "region": "Maharashtra",
+    "date_from": "2026-08-13",
+    "date_to": "2026-10-11"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 6.4
+  },
+  {
+   "utterance": "what is our net profit this year?",
+   "intent": "finance",
+   "page": "finance",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "finance",
+   "got_page": "finance",
+   "got_filters": {
+    "date_from": "2026-01-01",
+    "date_to": "2026-10-11"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 12.2
+  },
+  {
+   "utterance": "gross margin last quarter",
+   "intent": "finance",
+   "page": "finance",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "finance",
+   "got_page": "finance",
+   "got_filters": {
+    "date_from": "2026-07-01",
+    "date_to": "2026-09-30"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.0
+  },
+  {
+   "utterance": "expense breakdown",
+   "intent": "finance",
+   "page": "finance",
+   "filters": {},
+   "has_date": true,
+   "got_intent": "finance",
+   "got_page": "finance",
+   "got_filters": {
+    "date_from": "2026-01-01",
+    "date_to": "2026-10-11"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.5
+  },
+  {
+   "utterance": "change price of copper wire to 430",
+   "intent": "update",
+   "page": "inventory",
+   "filters": {
+    "q": "Copper Wire"
+   },
+   "has_date": false,
+   "got_intent": "update",
+   "got_page": "inventory",
+   "got_filters": {
+    "q": "Copper Wire"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 6.2
+  },
+  {
+   "utterance": "set PO-00012 status to approved",
+   "intent": "update",
+   "page": "procurement",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "update",
+   "got_page": "procurement",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.8
+  },
+  {
+   "utterance": "update reorder level of Steel Rod to 400",
+   "intent": "update",
+   "page": "inventory",
+   "filters": {
+    "q": "Steel Rod"
+   },
+   "has_date": false,
+   "got_intent": "update",
+   "got_page": "inventory",
+   "got_filters": {
+    "q": "Steel Rod"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 5.5
+  },
+  {
+   "utterance": "increase price of brass rod by 5%",
+   "intent": "update",
+   "page": "inventory",
+   "filters": {
+    "q": "Brass Rod"
+   },
+   "has_date": false,
+   "got_intent": "update",
+   "got_page": "inventory",
+   "got_filters": {
+    "q": "Brass Rod"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 4.3
+  },
+  {
+   "utterance": "change rating of supplier Unichem Traders to 3.5",
+   "intent": "update",
+   "page": "suppliers",
+   "filters": {
+    "q": "Unichem Traders"
+   },
+   "has_date": false,
+   "got_intent": "update",
+   "got_page": "suppliers",
+   "got_filters": {
+    "q": "Unichem Traders"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 3.8
+  },
+  {
+   "utterance": "mark SO-00100 as delivered",
+   "intent": "update",
+   "page": "sales",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "update",
+   "got_page": "sales",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 4.8
+  },
+  {
+   "utterance": "delete supplier Unichem Traders",
+   "intent": "delete",
+   "page": "suppliers",
+   "filters": {
+    "q": "Unichem Traders"
+   },
+   "has_date": false,
+   "got_intent": "delete",
+   "got_page": "suppliers",
+   "got_filters": {
+    "q": "Unichem Traders"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 3.3
+  },
+  {
+   "utterance": "remove PO-00005",
+   "intent": "delete",
+   "page": "procurement",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "delete",
+   "got_page": "procurement",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.3
+  },
+  {
+   "utterance": "add supplier Acme Steels in Pune",
+   "intent": "create",
+   "page": "suppliers",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "create",
+   "got_page": "suppliers",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 4.9
+  },
+  {
+   "utterance": "create new product Brass Nut category components price 25",
+   "intent": "create",
+   "page": "inventory",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "create",
+   "got_page": "inventory",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 7.0
+  },
+  {
+   "utterance": "add customer Zenith Labs in Chennai",
+   "intent": "create",
+   "page": "customers",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "create",
+   "got_page": "customers",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.4
+  },
+  {
+   "utterance": "add expense marketing amount 50000",
+   "intent": "create",
+   "page": "finance",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "create",
+   "got_page": "finance",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.2
+  },
+  {
+   "utterance": "find copper",
+   "intent": "search",
+   "page": "inventory",
+   "filters": {
+    "q": "Copper Wire"
+   },
+   "has_date": false,
+   "got_intent": "search",
+   "got_page": "inventory",
+   "got_filters": {
+    "q": "Copper Wire"
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.6
+  },
+  {
+   "utterance": "search Global Metals",
+   "intent": "search",
+   "page": "suppliers",
+   "filters": {
+    "q": "Global Metals Ltd."
+   },
+   "has_date": false,
+   "got_intent": "search",
+   "got_page": "suppliers",
+   "got_filters": {
+    "q": "Global Metals Ltd."
+   },
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.3
+  },
+  {
+   "utterance": "look up PO-00010",
+   "intent": "search",
+   "page": "procurement",
+   "filters": {},
+   "has_date": false,
+   "got_intent": "search",
+   "got_page": "procurement",
+   "got_filters": {},
+   "ok_intent": true,
+   "ok_page": true,
+   "ok_filters": true,
+   "ms": 2.6
+  }
+ ]
+}

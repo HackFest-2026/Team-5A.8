@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BizPilot AI · Supply Chain & Business Operations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css">
+<script src="/static/vendor/chart.umd.min.js"></script>
+<script src="/static/vendor/jspdf.umd.min.js" defer></script>
+</head>
+<body>
+
+<!-- LOGIN -->
+<section id="login" class="hidden">
+  <div class="lg-left">
+    <div class="brand" style="border:0;padding:0"><div class="logo">B</div><div><b>BizPilot AI</b><span>Context-Aware Application Agent</span></div></div>
+    <h1>Ask. Navigate. Analyze. Act.</h1>
+    <p>An embedded AI agent that understands every page, widget and record of your supply-chain app — and works on your behalf, within your role.</p>
+    <div class="lg-feat"><div class="ic">⌘</div><div><b>Natural-language navigation</b><span>Any page, filter, date range or sort in one sentence.</span></div></div>
+    <div class="lg-feat"><div class="ic">✦</div><div><b>Analysis with causes</b><span>Trends, period comparisons, root causes, forecasts.</span></div></div>
+    <div class="lg-feat"><div class="ic">⛨</div><div><b>Role-safe actions</b><span>Admins act; others raise change requests for approval.</span></div></div>
+  </div>
+  <div class="lg-right">
+    <div class="lg-box">
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab active" data-tab="signin" role="tab">Sign in</button>
+        <button type="button" class="tab" data-tab="signup" role="tab">Create account</button>
+      </div>
+      <form id="loginForm" data-pane="signin">
+        <h2>Sign in to continue</h2>
+        <div class="sub">BizPilot needs to know who you are. Your role decides what the agent may do for you.</div>
+        <div class="field"><label for="lgUser">Username</label><input class="input" id="lgUser" autocomplete="username" required></div>
+        <div class="field"><label for="lgPass">Password</label><input class="input" id="lgPass" type="password" autocomplete="current-password" required></div>
+        <div class="err" id="lgErr"></div>
+        <button class="btn primary block" type="submit">Sign in</button>
+        <div class="sub" style="margin:18px 0 0;font-size:12px">Demo accounts (click to fill)</div>
+        <div class="demo-users">
+          <button type="button" data-u="admin" data-p="admin123"><b>admin</b><span>Full CRUD + approve</span></button>
+          <button type="button" data-u="manager" data-p="manager123"><b>manager</b><span>Create + request changes</span></button>
+          <button type="button" data-u="staff" data-p="staff123"><b>staff</b><span>Create + request changes</span></button>
+          <button type="button" data-u="viewer" data-p="viewer123"><b>viewer</b><span>Read only</span></button>
+        </div>
+        <p class="switch">New here? <a href="#" data-goto="signup">Create an account</a></p>
+      </form>
+      <form id="signupForm" data-pane="signup" class="hidden">
+        <h2>Create your account</h2>
+        <div class="sub">Viewer and staff access start immediately. Manager access is sent to an admin for approval.</div>
+        <div class="field"><label for="suName">Full name</label><input class="input" id="suName" autocomplete="name" required></div>
+        <div class="field"><label for="suEmail">Work email</label><input class="input" id="suEmail" type="email" autocomplete="email" required></div>
+        <div class="row2">
+          <div class="field"><label for="suUser">Username</label><input class="input" id="suUser" autocomplete="username" pattern="[a-zA-Z0-9_.]{3,20}" title="3-20 letters, numbers, dot or underscore" required></div>
+          <div class="field"><label for="suRole">Access</label><select class="select" id="suRole"><option value="staff">Staff · create + request</option><option value="viewer">Viewer · read only</option><option value="manager">Manager · needs approval</option></select></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="suPass">Password</label><input class="input" id="suPass" type="password" autocomplete="new-password" minlength="6" required></div>
+          <div class="field"><label for="suPass2">Confirm password</label><input class="input" id="suPass2" type="password" autocomplete="new-password" minlength="6" required></div>
+        </div>
+        <div class="err" id="suErr"></div>
+        <button class="btn primary block" type="submit">Create account and sign in</button>
+        <p class="switch">Already have an account? <a href="#" data-goto="signin">Sign in</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- APP -->
+<div id="app" class="hidden">
+  <aside class="sidebar">
+    <div class="brand"><div class="logo-ring"></div><div><b>BizPilot AI</b><span>Supply Chain &amp; Business Ops</span></div></div>
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input class="input" id="gsearch" placeholder="Search pages, products, orders…">
+      <div class="sresults hidden" id="gresults"></div>
+    </div>
+    <nav id="nav"></nav>
+    <div class="side-foot">Plan <b>BizPilot Pro</b><br>Agent: <span id="llmState">rules</span><br>v1.1.0</div>
+  </aside>
+  <header class="topbar">
+    <button class="btn sm ghost menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <div class="crumb" data-widget-id="breadcrumb"><span id="crumbGroup">Overview</span><i>/</i><b id="crumbPage">Dashboard</b></div>
+    <div class="qp" data-widget-id="quick_prompts"><span class="qpl">Quick prompt:</span><div id="qpList"></div></div>
+    <div class="tb-right">
+      <div class="exp">
+        <button class="btn exp-btn" id="expBtn" aria-haspopup="true"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4"/><path d="M4 17v3h16v-3"/></svg>Export to PDF/CSV</button>
+        <div class="expmenu hidden" id="expMenu">
+          <button data-exp="pdf:page"><b>PDF summary</b><span>KPIs, charts, filters and table of this page</span></button>
+          <button data-exp="csv:page"><b>CSV</b><span>Main table with current filters</span></button>
+          <button data-exp="pdf:chat"><b>PDF of agent answers</b><span>This conversation with charts</span></button>
+        </div>
+      </div>
+      <button class="btn agent-btn" id="toggleAgent" title="Toggle agent">✦ Agent</button>
+      <div class="notif">
+        <button class="btn bell" id="bellBtn" aria-label="Notifications"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span class="nbadge hidden" id="nBadge">0</span></button>
+        <div class="npanel hidden" id="nPanel"><div class="nhead"><b>Notifications</b><button class="btn sm ghost" id="nAll">Mark all read</button></div><div id="nList"></div></div>
+      </div>
+      <div class="upill-wrap">
+        <button class="upill" id="uPill" aria-haspopup="true"><i class="dot"></i><span><em id="uRole">Role</em>: <b id="uName">—</b></span></button>
+        <div class="umenu hidden" id="uMenu"><div class="avatar" id="uAvatar">A</div><div id="uEmail" class="uemail"></div><button class="btn sm" id="logout">Log out</button></div>
+      </div>
+    </div>
+  </header>
+  <main id="main"></main>
+  <aside class="agent" id="agent">
+    <div class="ag-head">
+      <div class="bot">✦</div>
+      <div style="flex:1"><b>BizPilot AI Assistant</b><small>● Online</small></div>
+      <label class="cmode" title="Show a plan with Proceed / Cancel before the agent changes the screen"><input type="checkbox" id="confirmMode"> Ask first</label>
+      <button class="btn sm ghost" id="clearChat" title="Clear chat">⟲</button>
+      <button class="btn sm ghost" id="closeAgent" title="Minimize">—</button>
+    </div>
+    <div class="ag-ctx">Context: <code id="ctxPage">dashboard</code><span id="ctxFilters"></span></div>
+    <div class="msgs" id="msgs"></div>
+    <div class="ag-input">
+      <form class="ag-row" id="chatForm">
+        <button class="btn mic" type="button" id="micBtn" title="Speak your question" aria-label="Voice input"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
+        <input class="input" id="chatIn" placeholder="Ask or tap the mic… e.g. why did revenue drop in Maharashtra?" autocomplete="off">
+        <button class="btn primary" type="submit">➤</button>
+      </form>
+      <div class="ag-tools">
+        <button class="btn sm" data-q="What is on this page?">Page</button>
+        <button class="btn sm" data-q="Show me products likely to run out in 14 days">Stock risk</button>
+        <button class="btn sm" data-q="Show last 12 months analysis">Analyze</button>
+        <button class="btn sm" data-q="Show pending requests">Requests</button>
+        <label class="cmode" title="Read every answer aloud"><input type="checkbox" id="speakMode"> 🔊 Speak answers</label>
+      </div>
+    </div>
+  </aside>
+</div>
+<button class="fab hidden" id="fab" title="Open agent">✦</button>
+<div class="toasts" id="toasts"></div>
+<div id="modalRoot"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

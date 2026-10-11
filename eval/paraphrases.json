@@ -1,0 +1,162 @@
+[
+ {
+  "utterance": "how is the business doing",
+  "intent": "trend"
+ },
+ {
+  "utterance": "are we profitable",
+  "intent": "finance"
+ },
+ {
+  "utterance": "am I going to run short of anything soon",
+  "intent": "stockout"
+ },
+ {
+  "utterance": "which deliveries are stuck",
+  "intent": "delays"
+ },
+ {
+  "utterance": "who should I buy steel from",
+  "intent": "compare_suppliers"
+ },
+ {
+  "utterance": "sales fell in Pune, what is going on",
+  "intent": "why"
+ },
+ {
+  "utterance": "how did we do against last year",
+  "intent": "compare_periods"
+ },
+ {
+  "utterance": "anything waiting for my sign off",
+  "intent": "requests"
+ },
+ {
+  "utterance": "give me a quick summary of this screen",
+  "intent": "current_page"
+ },
+ {
+  "utterance": "which products sell the most",
+  "intent": "top"
+ },
+ {
+  "utterance": "our biggest clients",
+  "intent": "top"
+ },
+ {
+  "utterance": "where is money going",
+  "intent": "finance"
+ },
+ {
+  "utterance": "how much stock of copper wire do we have",
+  "intent": "navigate"
+ },
+ {
+  "utterance": "list all vendors in chemicals",
+  "intent": "navigate"
+ },
+ {
+  "utterance": "revenue for gujarat this quarter",
+  "intent": "navigate"
+ },
+ {
+  "utterance": "what is trending in sales",
+  "intent": "trend"
+ },
+ {
+  "utterance": "cheapest vendor for pvc pipe",
+  "intent": "compare_suppliers"
+ },
+ {
+  "utterance": "restock plan for items about to finish",
+  "intent": "stockout"
+ },
+ {
+  "utterance": "is Gati slow",
+  "intent": "delays"
+ },
+ {
+  "utterance": "month on month revenue",
+  "intent": "compare_periods"
+ },
+ {
+  "utterance": "why are orders falling",
+  "intent": "why"
+ },
+ {
+  "utterance": "costs going up why",
+  "intent": "expense_why"
+ },
+ {
+  "utterance": "worst performing regions",
+  "intent": "top"
+ },
+ {
+  "utterance": "pull up purchase orders waiting",
+  "intent": "navigate"
+ },
+ {
+  "utterance": "take me to customers",
+  "intent": "navigate"
+ },
+ {
+  "utterance": "help me",
+  "intent": "help"
+ },
+ {
+  "utterance": "what can this agent do",
+  "intent": "help"
+ },
+ {
+  "utterance": "what am i seeing here",
+  "intent": "current_page"
+ },
+ {
+  "utterance": "order 200 copper wire",
+  "intent": "create_po"
+ },
+ {
+  "utterance": "bump steel rod price to 560",
+  "intent": "update"
+ },
+ {
+  "utterance": "get rid of supplier MetalWorks",
+  "intent": "delete"
+ },
+ {
+  "utterance": "onboard a vendor named Ravi Metals in Chennai",
+  "intent": "create"
+ },
+ {
+  "utterance": "look for hex bolt",
+  "intent": "search"
+ },
+ {
+  "utterance": "which items need reordering",
+  "intent": "stockout"
+ },
+ {
+  "utterance": "show me sales numbers for delhi last month",
+  "intent": "navigate"
+ },
+ {
+  "utterance": "profit and loss this quarter",
+  "intent": "finance"
+ },
+ {
+  "utterance": "shipments arriving late to delhi",
+  "intent": "delays"
+ },
+ {
+  "utterance": "predict next month revenue",
+  "intent": "trend"
+ },
+ {
+  "utterance": "compare sales this quarter with last quarter",
+  "intent": "compare_periods"
+ },
+ {
+  "utterance": "top 3 regions",
+  "intent": "top"
+ }
+]

@@ -1,0 +1,5 @@
+**/__pycache__
+backend/bizpilot.db*
+deploy/web/dist
+eval/eval_results.json
+.env

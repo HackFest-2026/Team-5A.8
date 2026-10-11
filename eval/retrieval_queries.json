@@ -1,0 +1,122 @@
+[
+ {
+  "query": "where can I see stock levels and reorder points",
+  "page": "inventory"
+ },
+ {
+  "query": "vendor performance and on time delivery",
+  "page": "suppliers"
+ },
+ {
+  "query": "purchase spend by month",
+  "page": "procurement"
+ },
+ {
+  "query": "customer orders and invoices",
+  "page": "sales"
+ },
+ {
+  "query": "client list with lifetime value",
+  "page": "customers"
+ },
+ {
+  "query": "carrier delays and eta",
+  "page": "logistics"
+ },
+ {
+  "query": "profit and loss statement",
+  "page": "finance"
+ },
+ {
+  "query": "breakdown of metrics by region with growth",
+  "page": "analytics"
+ },
+ {
+  "query": "change requests waiting for review",
+  "page": "approvals"
+ },
+ {
+  "query": "who changed what and when",
+  "page": "activity"
+ },
+ {
+  "query": "executive overview kpis",
+  "page": "dashboard"
+ },
+ {
+  "query": "cash flow and margins",
+  "page": "finance"
+ },
+ {
+  "query": "days of cover for items",
+  "page": "inventory"
+ },
+ {
+  "query": "supplier ratings",
+  "page": "suppliers"
+ },
+ {
+  "query": "late shipments",
+  "page": "logistics"
+ },
+ {
+  "query": "cancelled orders",
+  "page": "sales"
+ },
+ {
+  "query": "audit trail",
+  "page": "activity"
+ },
+ {
+  "query": "approve or reject",
+  "page": "approvals"
+ },
+ {
+  "query": "database tables and columns",
+  "page": "data"
+ },
+ {
+  "query": "kpi definitions and formulas",
+  "page": "data"
+ },
+ {
+  "query": "sql console",
+  "page": "data"
+ },
+ {
+  "query": "monthly purchase spend chart",
+  "page": "procurement"
+ },
+ {
+  "query": "revenue by segment",
+  "page": "customers"
+ },
+ {
+  "query": "expense breakdown",
+  "page": "finance"
+ },
+ {
+  "query": "on-time delivery by supplier",
+  "page": "suppliers"
+ },
+ {
+  "query": "stock value by category",
+  "page": "inventory"
+ },
+ {
+  "query": "average delay by carrier",
+  "page": "logistics"
+ },
+ {
+  "query": "low stock alerts",
+  "page": "dashboard"
+ },
+ {
+  "query": "agent latency",
+  "page": "activity"
+ },
+ {
+  "query": "group sales by channel",
+  "page": "analytics"
+ }
+]

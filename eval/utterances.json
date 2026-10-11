@@ -1,0 +1,926 @@
+[
+ {
+  "utterance": "hi",
+  "intent": "help",
+  "page": null,
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "help",
+  "intent": "help",
+  "page": null,
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "what can you do?",
+  "intent": "help",
+  "page": null,
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "what is on this page?",
+  "intent": "current_page",
+  "page": null,
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "explain this page",
+  "intent": "current_page",
+  "page": null,
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "where am i",
+  "intent": "current_page",
+  "page": null,
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "What is the current page and key information?",
+  "intent": "current_page",
+  "page": null,
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "summarize this page",
+  "intent": "current_page",
+  "page": null,
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "open dashboard",
+  "intent": "navigate",
+  "page": "dashboard",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "go to home",
+  "intent": "navigate",
+  "page": "dashboard",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "show overview",
+  "intent": "navigate",
+  "page": "dashboard",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "open inventory",
+  "intent": "navigate",
+  "page": "inventory",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "show out of stock items",
+  "intent": "navigate",
+  "page": "inventory",
+  "filters": {
+   "stock_status": "Out of Stock"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "show low stock products",
+  "intent": "navigate",
+  "page": "inventory",
+  "filters": {
+   "stock_status": "Low Stock"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "show electrical items in stock",
+  "intent": "navigate",
+  "page": "inventory",
+  "filters": {
+   "category": "Electrical",
+   "stock_status": "In Stock"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "show packaging products",
+  "intent": "navigate",
+  "page": "inventory",
+  "filters": {
+   "category": "Packaging"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "inventory in mumbai warehouse",
+  "intent": "navigate",
+  "page": "inventory",
+  "filters": {
+   "warehouse": "Mumbai WH"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "open suppliers",
+  "intent": "navigate",
+  "page": "suppliers",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "show vendors",
+  "intent": "navigate",
+  "page": "suppliers",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "show suppliers with rating above 4.5",
+  "intent": "navigate",
+  "page": "suppliers",
+  "filters": {
+   "min_rating": "4.5"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "list chemical suppliers",
+  "intent": "navigate",
+  "page": "suppliers",
+  "filters": {
+   "category": "Chemicals"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "open procurement",
+  "intent": "navigate",
+  "page": "procurement",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "show draft purchase orders",
+  "intent": "navigate",
+  "page": "procurement",
+  "filters": {
+   "status": "Draft"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "show pending POs this month",
+  "intent": "navigate",
+  "page": "procurement",
+  "filters": {
+   "status": "Pending"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "purchase orders from Global Metals",
+  "intent": "navigate",
+  "page": "procurement",
+  "filters": {
+   "supplier": "Global Metals Ltd."
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "show received purchase orders last quarter",
+  "intent": "navigate",
+  "page": "procurement",
+  "filters": {
+   "status": "Received"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "open sales",
+  "intent": "navigate",
+  "page": "sales",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "Show Karnataka sales for last quarter",
+  "intent": "navigate",
+  "page": "sales",
+  "filters": {
+   "region": "Karnataka"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "Show cancelled orders",
+  "intent": "navigate",
+  "page": "sales",
+  "filters": {
+   "status": "Cancelled"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "show returned orders in Delhi",
+  "intent": "navigate",
+  "page": "sales",
+  "filters": {
+   "status": "Returned",
+   "region": "Delhi"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "sales in mumbai last 3 months",
+  "intent": "navigate",
+  "page": "sales",
+  "filters": {
+   "region": "Maharashtra"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "online portal orders this year",
+  "intent": "navigate",
+  "page": "sales",
+  "filters": {
+   "channel": "Online Portal"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "show electrical sales in Q2 2026",
+  "intent": "navigate",
+  "page": "sales",
+  "filters": {
+   "category": "Electrical"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "orders from hyderabad in march 2026",
+  "intent": "navigate",
+  "page": "sales",
+  "filters": {
+   "region": "Telangana"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "distributor sales in Tamil Nadu",
+  "intent": "navigate",
+  "page": "sales",
+  "filters": {
+   "channel": "Distributor",
+   "region": "Tamil Nadu"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "show delivered orders last week",
+  "intent": "navigate",
+  "page": "sales",
+  "filters": {
+   "status": "Delivered"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "open customers",
+  "intent": "navigate",
+  "page": "customers",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "show enterprise customers in Delhi",
+  "intent": "navigate",
+  "page": "customers",
+  "filters": {
+   "segment": "Enterprise",
+   "region": "Delhi"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "list clients in bangalore",
+  "intent": "navigate",
+  "page": "customers",
+  "filters": {
+   "region": "Karnataka"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "retail customers",
+  "intent": "navigate",
+  "page": "customers",
+  "filters": {
+   "segment": "Retail"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "open logistics",
+  "intent": "navigate",
+  "page": "logistics",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "show shipments in transit",
+  "intent": "navigate",
+  "page": "logistics",
+  "filters": {
+   "status": "In Transit"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "BlueDart shipments last 30 days",
+  "intent": "navigate",
+  "page": "logistics",
+  "filters": {
+   "carrier": "BlueDart"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "Show Maharashtra shipments last 30 days",
+  "intent": "navigate",
+  "page": "logistics",
+  "filters": {
+   "region": "Maharashtra"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "open finance",
+  "intent": "navigate",
+  "page": "finance",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "go to finance last quarter",
+  "intent": "navigate",
+  "page": "finance",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "show marketing expenses this year",
+  "intent": "finance",
+  "page": "finance",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "open analytics",
+  "intent": "navigate",
+  "page": "analytics",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "revenue breakdown by channel",
+  "intent": "navigate",
+  "page": "analytics",
+  "filters": {
+   "group_by": "channel"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "units by category last 6 months",
+  "intent": "navigate",
+  "page": "analytics",
+  "filters": {
+   "group_by": "category",
+   "metric": "units"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "open approvals",
+  "intent": "navigate",
+  "page": "approvals",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "show rejected change requests",
+  "intent": "navigate",
+  "page": "approvals",
+  "filters": {
+   "status": "Rejected"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "open audit log",
+  "intent": "navigate",
+  "page": "activity",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "show agent activity",
+  "intent": "navigate",
+  "page": "activity",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "go back",
+  "intent": "go_back",
+  "page": null,
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "show pending requests",
+  "intent": "requests",
+  "page": "approvals",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "show my requests",
+  "intent": "requests",
+  "page": "approvals",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "what needs my approval",
+  "intent": "requests",
+  "page": "approvals",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "summarize pending requests",
+  "intent": "requests",
+  "page": "approvals",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "approve request 1",
+  "intent": "review",
+  "page": null,
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "reject request 2 because price not justified",
+  "intent": "review",
+  "page": "approvals",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "approve all",
+  "intent": "review_all",
+  "page": null,
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "Show me products likely to run out in 14 days",
+  "intent": "stockout",
+  "page": "inventory",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "which items will run out in next 7 days",
+  "intent": "stockout",
+  "page": "inventory",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "Analyze inventory items that may run out in next 14 days and create purchase order drafts with best supplier options",
+  "intent": "stockout",
+  "page": "inventory",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "Create purchase order for low stock items",
+  "intent": "stockout",
+  "page": "inventory",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "stock out risk for electrical items",
+  "intent": "stockout",
+  "page": "inventory",
+  "filters": {
+   "category": "Electrical"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "create purchase order for 500 steel rod",
+  "intent": "create_po",
+  "page": "procurement",
+  "filters": {
+   "status": "Draft"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "raise a PO for copper wire",
+  "intent": "create_po",
+  "page": "procurement",
+  "filters": {
+   "status": "Draft"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "create purchase order for plastic resin from Prime Plastics",
+  "intent": "create_po",
+  "page": "procurement",
+  "filters": {
+   "status": "Draft"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "Compare top 3 suppliers for steel with best pricing",
+  "intent": "compare_suppliers",
+  "page": "suppliers",
+  "filters": {
+   "category": "Raw Materials"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "best supplier for copper wire",
+  "intent": "compare_suppliers",
+  "page": "suppliers",
+  "filters": {
+   "category": "Electrical"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "which vendor is cheapest for epoxy resin",
+  "intent": "compare_suppliers",
+  "page": "suppliers",
+  "filters": {
+   "category": "Chemicals"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "compare suppliers for safety gloves",
+  "intent": "compare_suppliers",
+  "page": "suppliers",
+  "filters": {
+   "category": "Safety"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "Compare revenue this month vs last month",
+  "intent": "compare_periods",
+  "page": "analytics",
+  "filters": {
+   "metric": "revenue",
+   "group_by": "region"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "compare orders Q2 2026 vs Q1 2026",
+  "intent": "compare_periods",
+  "page": "analytics",
+  "filters": {
+   "metric": "orders"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "revenue 2026 vs 2025",
+  "intent": "compare_periods",
+  "page": "analytics",
+  "filters": {
+   "metric": "revenue"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "compare Karnataka revenue last quarter vs previous",
+  "intent": "compare_periods",
+  "page": "analytics",
+  "filters": {
+   "region": "Karnataka"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "month over month revenue growth",
+  "intent": "compare_periods",
+  "page": "analytics",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "Why did revenue drop in Maharashtra?",
+  "intent": "why",
+  "page": "logistics",
+  "filters": {
+   "region": "Maharashtra"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "why are sales down",
+  "intent": "why",
+  "page": "analytics",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "what caused the decline in orders last month",
+  "intent": "why",
+  "page": "analytics",
+  "filters": {
+   "metric": "orders"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "why did logistics cost increase?",
+  "intent": "expense_why",
+  "page": "finance",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "Top 5 products by revenue",
+  "intent": "top",
+  "page": "analytics",
+  "filters": {
+   "group_by": "product"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "top 10 customers by revenue",
+  "intent": "top",
+  "page": "customers",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "bottom 3 regions by units",
+  "intent": "top",
+  "page": "analytics",
+  "filters": {
+   "group_by": "region",
+   "metric": "units"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "best selling products this year",
+  "intent": "top",
+  "page": "analytics",
+  "filters": {
+   "group_by": "product"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "top suppliers by rating",
+  "intent": "top",
+  "page": "suppliers",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "top 3 categories last quarter",
+  "intent": "top",
+  "page": "analytics",
+  "filters": {
+   "group_by": "category"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "Show last 12 months analysis",
+  "intent": "trend",
+  "page": "analytics",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "revenue trend 2026",
+  "intent": "trend",
+  "page": "analytics",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "analyze sales in Karnataka last 6 months",
+  "intent": "trend",
+  "page": "analytics",
+  "filters": {
+   "region": "Karnataka"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "forecast revenue",
+  "intent": "trend",
+  "page": "analytics",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "how are sales doing",
+  "intent": "trend",
+  "page": "analytics",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "show delayed shipments",
+  "intent": "delays",
+  "page": "logistics",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "which carrier has the most delays?",
+  "intent": "delays",
+  "page": "logistics",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "late deliveries to Maharashtra",
+  "intent": "delays",
+  "page": "logistics",
+  "filters": {
+   "region": "Maharashtra"
+  },
+  "has_date": true
+ },
+ {
+  "utterance": "what is our net profit this year?",
+  "intent": "finance",
+  "page": "finance",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "gross margin last quarter",
+  "intent": "finance",
+  "page": "finance",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "expense breakdown",
+  "intent": "finance",
+  "page": "finance",
+  "filters": {},
+  "has_date": true
+ },
+ {
+  "utterance": "change price of copper wire to 430",
+  "intent": "update",
+  "page": "inventory",
+  "filters": {
+   "q": "Copper Wire"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "set PO-00012 status to approved",
+  "intent": "update",
+  "page": "procurement",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "update reorder level of Steel Rod to 400",
+  "intent": "update",
+  "page": "inventory",
+  "filters": {
+   "q": "Steel Rod"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "increase price of brass rod by 5%",
+  "intent": "update",
+  "page": "inventory",
+  "filters": {
+   "q": "Brass Rod"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "change rating of supplier Unichem Traders to 3.5",
+  "intent": "update",
+  "page": "suppliers",
+  "filters": {
+   "q": "Unichem Traders"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "mark SO-00100 as delivered",
+  "intent": "update",
+  "page": "sales",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "delete supplier Unichem Traders",
+  "intent": "delete",
+  "page": "suppliers",
+  "filters": {
+   "q": "Unichem Traders"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "remove PO-00005",
+  "intent": "delete",
+  "page": "procurement",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "add supplier Acme Steels in Pune",
+  "intent": "create",
+  "page": "suppliers",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "create new product Brass Nut category components price 25",
+  "intent": "create",
+  "page": "inventory",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "add customer Zenith Labs in Chennai",
+  "intent": "create",
+  "page": "customers",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "add expense marketing amount 50000",
+  "intent": "create",
+  "page": "finance",
+  "filters": {},
+  "has_date": false
+ },
+ {
+  "utterance": "find copper",
+  "intent": "search",
+  "page": "inventory",
+  "filters": {
+   "q": "Copper Wire"
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "search Global Metals",
+  "intent": "search",
+  "page": "suppliers",
+  "filters": {
+   "q": "Global Metals Ltd."
+  },
+  "has_date": false
+ },
+ {
+  "utterance": "look up PO-00010",
+  "intent": "search",
+  "page": "procurement",
+  "filters": {},
+  "has_date": false
+ }
+]

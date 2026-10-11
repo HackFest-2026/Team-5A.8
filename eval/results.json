@@ -1,0 +1,153 @@
+{
+ "ran_at": "2026-10-11 07:29:38",
+ "seconds": 4.2,
+ "kpis": {
+  "Intent-to-destination accuracy": 100.0,
+  "Intent accuracy (core)": 100.0,
+  "UI-state correctness (filters, dates, sort)": 100.0,
+  "Task success (core, strict)": 100.0,
+  "Multi-step task success": 100.0,
+  "Avg steps per request": 1.37,
+  "Avg tool calls per request": 2.76,
+  "Latency p50 (ms)": 7.0,
+  "Latency p95 (ms)": 26.8,
+  "Analytical correctness (within 1%)": 100.0,
+  "Explanation faithfulness": 100.0,
+  "Retrieval precision@1": 86.7,
+  "Retrieval recall@3": 100.0,
+  "Retrieval MRR": 0.933,
+  "Correct refusals": 100.0,
+  "Correct clarifications": 100.0,
+  "Meta / help answers": 100.0,
+  "Invalid actions executed": 0,
+  "Generalization: paraphrases (tuned on)": 100.0,
+  "Generalization: blind set (never tuned)": 92.0,
+  "Typo robustness": 98.1
+ },
+ "suites": [
+  {
+   "suite": "core",
+   "tests": 115,
+   "passed": 115,
+   "rate": 100.0
+  },
+  {
+   "suite": "paraphrase",
+   "tests": 40,
+   "passed": 40,
+   "rate": 100.0
+  },
+  {
+   "suite": "blind",
+   "tests": 25,
+   "passed": 23,
+   "rate": 92.0
+  },
+  {
+   "suite": "typos",
+   "tests": 108,
+   "passed": 106,
+   "rate": 98.1
+  },
+  {
+   "suite": "safety",
+   "tests": 28,
+   "passed": 28,
+   "rate": 100.0
+  },
+  {
+   "suite": "multi_step",
+   "tests": 10,
+   "passed": 10,
+   "rate": 100.0
+  },
+  {
+   "suite": "retrieval",
+   "tests": 30,
+   "passed": 26,
+   "rate": 86.7
+  },
+  {
+   "suite": "analytical",
+   "tests": 20,
+   "passed": 20,
+   "rate": 100.0
+  }
+ ],
+ "failures": [
+  {
+   "suite": "blind",
+   "test": "are any products about to go out of stock",
+   "expected": "stockout",
+   "got": "navigate",
+   "pass": false,
+   "ms": 13.6,
+   "reason": "got navigate / inventory"
+  },
+  {
+   "suite": "blind",
+   "test": "which shipping partner is the slowest",
+   "expected": "delays",
+   "got": "unknown",
+   "pass": false,
+   "ms": 11.5,
+   "reason": "got unknown / None"
+  },
+  {
+   "suite": "typos",
+   "test": "salees in mumbai last 3 months",
+   "expected": "navigate",
+   "got": "navigate",
+   "pass": false,
+   "ms": 35.9,
+   "reason": "navigate / customers"
+  },
+  {
+   "suite": "typos",
+   "test": "raie a PO for coppper wire",
+   "expected": "create_po",
+   "got": "navigate",
+   "pass": false,
+   "ms": 15.3,
+   "reason": "navigate / procurement"
+  },
+  {
+   "suite": "retrieval",
+   "test": "customer orders and invoices",
+   "expected": "sales",
+   "got": "customers",
+   "pass": false,
+   "rank": 2,
+   "reason": "rank 2"
+  },
+  {
+   "suite": "retrieval",
+   "test": "revenue by segment",
+   "expected": "customers",
+   "got": "finance",
+   "pass": false,
+   "rank": 2,
+   "reason": "rank 2"
+  },
+  {
+   "suite": "retrieval",
+   "test": "low stock alerts",
+   "expected": "dashboard",
+   "got": "inventory",
+   "pass": false,
+   "rank": 2,
+   "reason": "rank 2"
+  },
+  {
+   "suite": "retrieval",
+   "test": "group sales by channel",
+   "expected": "analytics",
+   "got": "sales",
+   "pass": false,
+   "rank": 2,
+   "reason": "rank 2"
+  }
+ ],
+ "tests": 376,
+ "note": "Test sets are synthetic and written by the BizPilot team. 'paraphrase' was used for tuning; 'blind' was never tuned on."
+}

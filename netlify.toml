@@ -1,0 +1,4 @@
+# Static (serverless) version: agent runs fully in the browser
+[build]
+  command = "python3 deploy/build_web.py"
+  publish = "deploy/web/dist"

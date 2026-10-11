@@ -1,0 +1,102 @@
+[
+ {
+  "utterance": "are any products about to go out of stock",
+  "intent": "stockout"
+ },
+ {
+  "utterance": "which shipping partner is the slowest",
+  "intent": "delays"
+ },
+ {
+  "utterance": "did we make a profit last quarter",
+  "intent": "finance"
+ },
+ {
+  "utterance": "what does revenue look like over the past six months",
+  "intent": "trend"
+ },
+ {
+  "utterance": "tell me why orders dropped in Delhi",
+  "intent": "why"
+ },
+ {
+  "utterance": "this quarter versus last quarter revenue",
+  "intent": "compare_periods"
+ },
+ {
+  "utterance": "best performing products this year",
+  "intent": "top"
+ },
+ {
+  "utterance": "who are our top 10 customers",
+  "intent": "top"
+ },
+ {
+  "utterance": "recommend a supplier for ball bearings",
+  "intent": "compare_suppliers"
+ },
+ {
+  "utterance": "do I have anything to approve",
+  "intent": "requests"
+ },
+ {
+  "utterance": "explain what this screen shows",
+  "intent": "current_page"
+ },
+ {
+  "utterance": "set the stock of rubber gasket to 900",
+  "intent": "update"
+ },
+ {
+  "utterance": "remove customer Apex Industries",
+  "intent": "delete"
+ },
+ {
+  "utterance": "register a new supplier called Kaveri Steel in Mysuru",
+  "intent": "create"
+ },
+ {
+  "utterance": "search for gear box",
+  "intent": "search"
+ },
+ {
+  "utterance": "open logistics for Tamil Nadu",
+  "intent": "navigate"
+ },
+ {
+  "utterance": "expenses this year",
+  "intent": "finance"
+ },
+ {
+  "utterance": "which state sells the least",
+  "intent": "top"
+ },
+ {
+  "utterance": "why did our spending on logistics go up",
+  "intent": "expense_why"
+ },
+ {
+  "utterance": "raise a purchase order for 100 electric motors",
+  "intent": "create_po"
+ },
+ {
+  "utterance": "is revenue growing",
+  "intent": "trend"
+ },
+ {
+  "utterance": "compare units sold this year vs last year",
+  "intent": "compare_periods"
+ },
+ {
+  "utterance": "show me shipments from last week",
+  "intent": "navigate"
+ },
+ {
+  "utterance": "lowest rated vendors",
+  "intent": "top"
+ },
+ {
+  "utterance": "what needs reordering this week",
+  "intent": "stockout"
+ }
+]
